@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.listeners.ListenerClass"/>
+    <listener class-name="com.listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="com.testcases.APIDemosTest">
+        <methods>
+          <include name="wrapUp"/>
+          <include name="testAPIScroll" invocation-numbers="0"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.testcases.APIDemosTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
