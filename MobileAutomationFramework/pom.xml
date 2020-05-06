@@ -21,9 +21,6 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.18.1</version>
 				<configuration>
-					<systemPropertyVariables>
-						<url>${Durl}</url>
-					</systemPropertyVariables>
 					<forkCount>0</forkCount>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
